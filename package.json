@@ -1,0 +1,23 @@
+{
+  "name": "dance-game-modtools",
+  "module": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild ./src/index.ts --bundle --minify --outfile=dist/mod.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.0",
+    "kaplay": "^3001.0.2"
+  }
+}
